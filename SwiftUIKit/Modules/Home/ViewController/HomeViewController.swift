@@ -12,7 +12,7 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
     
-     let dataArray = ["PhshViewController","PresentViewController"]
+     let dataArray = ["PhshViewController","PresentViewController","自定义Cell","下拉刷新"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,14 +51,18 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             let pushVC = HomePushViewController()
             pushVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(pushVC, animated: true)
-        
             break
             
         case 1:
             let loginVC = LoginViewController()
             let loginNavi = BaseNavigationController.init(rootViewController: loginVC)
             self.present(loginNavi, animated: true, completion: nil)
+            break
             
+        case 2:
+            let customCellVC = CustomCellViewController()
+            customCellVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(customCellVC, animated: true)
             break
             
         default: break

@@ -31,6 +31,10 @@
 		DE462850200C7E65000A3D12 /* TabbarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46284F200C7E65000A3D12 /* TabbarItemContentView.swift */; };
 		DE462858200C7F62000A3D12 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE462856200C7F62000A3D12 /* LoginViewController.swift */; };
 		DE462859200C7F62000A3D12 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE462857200C7F62000A3D12 /* LoginViewController.xib */; };
+		DE46285C200C88B7000A3D12 /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46285A200C88B7000A3D12 /* CustomCellViewController.swift */; };
+		DE46285D200C88B7000A3D12 /* CustomCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE46285B200C88B7000A3D12 /* CustomCellViewController.xib */; };
+		DE462861200C8937000A3D12 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46285F200C8937000A3D12 /* CustomCell.swift */; };
+		DE462862200C8937000A3D12 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE462860200C8937000A3D12 /* CustomCell.xib */; };
 		F6AE0BCF00E748752A3DE31C /* Pods_SwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1302ABECA68457438801A59C /* Pods_SwiftUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +68,10 @@
 		DE46284F200C7E65000A3D12 /* TabbarItemContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItemContentView.swift; sourceTree = "<group>"; };
 		DE462856200C7F62000A3D12 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DE462857200C7F62000A3D12 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DE46285A200C88B7000A3D12 /* CustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellViewController.swift; sourceTree = "<group>"; };
+		DE46285B200C88B7000A3D12 /* CustomCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellViewController.xib; sourceTree = "<group>"; };
+		DE46285F200C8937000A3D12 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		DE462860200C8937000A3D12 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +220,7 @@
 		DE46280A200C4EB9000A3D12 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE46285E200C8916000A3D12 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +232,8 @@
 				DE462834200C5C3C000A3D12 /* HomeViewController.xib */,
 				DE462847200C5E45000A3D12 /* HomePushViewController.swift */,
 				DE462848200C5E45000A3D12 /* HomePushViewController.xib */,
+				DE46285A200C88B7000A3D12 /* CustomCellViewController.swift */,
+				DE46285B200C88B7000A3D12 /* CustomCellViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -441,6 +452,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		DE46285E200C8916000A3D12 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE46285F200C8937000A3D12 /* CustomCell.swift */,
+				DE462860200C8937000A3D12 /* CustomCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		FA1F8CD6CC46B87BFD78EBF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +531,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE462862200C8937000A3D12 /* CustomCell.xib in Resources */,
 				DE46284A200C5E45000A3D12 /* HomePushViewController.xib in Resources */,
 				DE4627F9200C4B48000A3D12 /* LaunchScreen.storyboard in Resources */,
 				DE462859200C7F62000A3D12 /* LoginViewController.xib in Resources */,
@@ -518,6 +539,7 @@
 				DE4627F6200C4B48000A3D12 /* Assets.xcassets in Resources */,
 				DE462842200C5CD7000A3D12 /* MessageViewController.xib in Resources */,
 				DE46284C200C6E30000A3D12 /* Navi.xcassets in Resources */,
+				DE46285D200C88B7000A3D12 /* CustomCellViewController.xib in Resources */,
 				DE4627F4200C4B48000A3D12 /* Main.storyboard in Resources */,
 				DE46283A200C5C9C000A3D12 /* FavorViewController.xib in Resources */,
 				DE462846200C5CF4000A3D12 /* MeViewController.xib in Resources */,
@@ -587,11 +609,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE462845200C5CF4000A3D12 /* MeViewController.swift in Sources */,
+				DE46285C200C88B7000A3D12 /* CustomCellViewController.swift in Sources */,
 				DE4627F1200C4B48000A3D12 /* ViewController.swift in Sources */,
 				DE462839200C5C9C000A3D12 /* FavorViewController.swift in Sources */,
 				DE4627EF200C4B48000A3D12 /* AppDelegate.swift in Sources */,
 				DE462841200C5CD7000A3D12 /* MessageViewController.swift in Sources */,
 				DE462835200C5C3C000A3D12 /* HomeViewController.swift in Sources */,
+				DE462861200C8937000A3D12 /* CustomCell.swift in Sources */,
 				DE46283D200C5CB9000A3D12 /* FindViewController.swift in Sources */,
 				DE462850200C7E65000A3D12 /* TabbarItemContentView.swift in Sources */,
 				DE46282D200C5229000A3D12 /* BaseNavigationController.swift in Sources */,
