@@ -40,6 +40,11 @@
 		DE78B3AE200DDA9100DB93C6 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3AD200DDA9100DB93C6 /* ContentModel.swift */; };
 		DE78B3B1200DF21900DB93C6 /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3AF200DF21900DB93C6 /* AlamofireViewController.swift */; };
 		DE78B3B2200DF21900DB93C6 /* AlamofireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE78B3B0200DF21900DB93C6 /* AlamofireViewController.xib */; };
+		DE78B3B4200DF7FC00DB93C6 /* AlamofireModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3B3200DF7FC00DB93C6 /* AlamofireModel.swift */; };
+		DE78B3B7200DF81300DB93C6 /* AlamofireCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3B5200DF81300DB93C6 /* AlamofireCell.swift */; };
+		DE78B3B8200DF81300DB93C6 /* AlamofireCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE78B3B6200DF81300DB93C6 /* AlamofireCell.xib */; };
+		DE78B3BB200DFB6C00DB93C6 /* HomeNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3BA200DFB6C00DB93C6 /* HomeNetworkService.swift */; };
+		DE78B3C0200DFC8800DB93C6 /* NetworkServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3BF200DFC8800DB93C6 /* NetworkServiceConfig.swift */; };
 		F6AE0BCF00E748752A3DE31C /* Pods_SwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1302ABECA68457438801A59C /* Pods_SwiftUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +87,11 @@
 		DE78B3AD200DDA9100DB93C6 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		DE78B3AF200DF21900DB93C6 /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		DE78B3B0200DF21900DB93C6 /* AlamofireViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireViewController.xib; sourceTree = "<group>"; };
+		DE78B3B3200DF7FC00DB93C6 /* AlamofireModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireModel.swift; sourceTree = "<group>"; };
+		DE78B3B5200DF81300DB93C6 /* AlamofireCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireCell.swift; sourceTree = "<group>"; };
+		DE78B3B6200DF81300DB93C6 /* AlamofireCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireCell.xib; sourceTree = "<group>"; };
+		DE78B3BA200DFB6C00DB93C6 /* HomeNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkService.swift; sourceTree = "<group>"; };
+		DE78B3BF200DFC8800DB93C6 /* NetworkServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				DE78B3AD200DDA9100DB93C6 /* ContentModel.swift */,
+				DE78B3B3200DF7FC00DB93C6 /* AlamofireModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -412,6 +423,8 @@
 		DE46282F200C569E000A3D12 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				DE78B3BC200DFC4800DB93C6 /* Config */,
+				DE78B3B9200DFB4200DB93C6 /* NetworkService */,
 				DE462830200C569E000A3D12 /* SetupTabbar */,
 			);
 			path = Expand;
@@ -472,8 +485,26 @@
 			children = (
 				DE46285F200C8937000A3D12 /* CustomCell.swift */,
 				DE462860200C8937000A3D12 /* CustomCell.xib */,
+				DE78B3B5200DF81300DB93C6 /* AlamofireCell.swift */,
+				DE78B3B6200DF81300DB93C6 /* AlamofireCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE78B3B9200DFB4200DB93C6 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				DE78B3BA200DFB6C00DB93C6 /* HomeNetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		DE78B3BC200DFC4800DB93C6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DE78B3BF200DFC8800DB93C6 /* NetworkServiceConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		FA1F8CD6CC46B87BFD78EBF4 /* Frameworks */ = {
@@ -548,6 +579,7 @@
 			files = (
 				DE462862200C8937000A3D12 /* CustomCell.xib in Resources */,
 				DE46284A200C5E45000A3D12 /* HomePushViewController.xib in Resources */,
+				DE78B3B8200DF81300DB93C6 /* AlamofireCell.xib in Resources */,
 				DE4627F9200C4B48000A3D12 /* LaunchScreen.storyboard in Resources */,
 				DE462859200C7F62000A3D12 /* LoginViewController.xib in Resources */,
 				DE46283E200C5CB9000A3D12 /* FindViewController.xib in Resources */,
@@ -611,6 +643,7 @@
 				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -618,6 +651,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -633,6 +667,7 @@
 			files = (
 				DE462845200C5CF4000A3D12 /* MeViewController.swift in Sources */,
 				DE46285C200C88B7000A3D12 /* CustomCellViewController.swift in Sources */,
+				DE78B3C0200DFC8800DB93C6 /* NetworkServiceConfig.swift in Sources */,
 				DE4627F1200C4B48000A3D12 /* ViewController.swift in Sources */,
 				DE462839200C5C9C000A3D12 /* FavorViewController.swift in Sources */,
 				DE78B3AA200DAA2D00DB93C6 /* RefreshViewController.swift in Sources */,
@@ -643,12 +678,15 @@
 				DE46283D200C5CB9000A3D12 /* FindViewController.swift in Sources */,
 				DE462850200C7E65000A3D12 /* TabbarItemContentView.swift in Sources */,
 				DE46282D200C5229000A3D12 /* BaseNavigationController.swift in Sources */,
+				DE78B3BB200DFB6C00DB93C6 /* HomeNetworkService.swift in Sources */,
 				DE78B3AE200DDA9100DB93C6 /* ContentModel.swift in Sources */,
 				DE78B3B1200DF21900DB93C6 /* AlamofireViewController.swift in Sources */,
+				DE78B3B7200DF81300DB93C6 /* AlamofireCell.swift in Sources */,
 				DE462820200C4F69000A3D12 /* BaseViewController.swift in Sources */,
 				DE462832200C56AB000A3D12 /* SetupTabbar.swift in Sources */,
 				DE462858200C7F62000A3D12 /* LoginViewController.swift in Sources */,
 				DE462849200C5E45000A3D12 /* HomePushViewController.swift in Sources */,
+				DE78B3B4200DF7FC00DB93C6 /* AlamofireModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

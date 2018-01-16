@@ -5,4 +5,5 @@ target 'SwiftUIKit' do
     pod "ESPullToRefresh"
     pod "Kingfisher"
     pod "Alamofire"
+    pod "SwiftyJSON"
 end
