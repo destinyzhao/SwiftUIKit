@@ -8,11 +8,11 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
+class HomeViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-     let dataArray = ["PhshViewController","PresentViewController","自定义Cell","下拉刷新"]
+    let dataArray = ["PhshViewController","PresentViewController","自定义Cell","下拉刷新","Kingfisher","Alamofire"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,17 +31,30 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
         self.title = "Home";
     }
     
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
+
+extension HomeViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell") ?? UITableViewCell.init(style: .subtitle, reuseIdentifier: "UITableViewCell")
-    
+        
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         cell.textLabel?.font = UIFont.init(name: "", size: 14.0)
         cell.textLabel?.text = self.dataArray[indexPath.row]
-    
+        
         return cell
     }
     
@@ -65,6 +78,17 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             self.navigationController?.pushViewController(customCellVC, animated: true)
             break
             
+        case 3:
+            let refreshVC = RefreshViewController()
+            refreshVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(refreshVC, animated: true)
+            break
+            
+        case 5:
+            let alamofireVC = AlamofireViewController()
+            alamofireVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(alamofireVC, animated: true)
+            
         default: break
             
         }
@@ -74,15 +98,4 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
         return 44
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

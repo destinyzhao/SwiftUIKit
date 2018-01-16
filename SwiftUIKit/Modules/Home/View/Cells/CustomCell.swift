@@ -7,10 +7,26 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CustomCell: UITableViewCell {
 
     @IBOutlet weak var headImgView: UIImageView!
+    @IBOutlet weak var textlbl: UILabel!
+    
+    var model:ContentModel?{
+        didSet{
+            let url = URL.init(string: (model?.imgUrl)!)
+            headImgView.kf.setImage(with: url,placeholder: nil,options: [.transition(ImageTransition.fade(1))],
+                                    progressBlock: { receivedSize, totalSize in
+                                    },
+                                    completionHandler: { image, error, cacheType, imageURL in
+                                      
+            })
+            
+            textlbl.text = model?.content
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +40,18 @@ class CustomCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setDataForCell(model:ContentModel) -> Void {
+        let url = URL.init(string: (model.imgUrl)!)
+        headImgView.kf.setImage(with: url,placeholder: nil,options: [.transition(ImageTransition.fade(1))],
+                                progressBlock: { receivedSize, totalSize in
+        },
+                                completionHandler: { image, error, cacheType, imageURL in
+                                    
+        })
+        
+        textlbl.text = model.content
     }
     
 }
