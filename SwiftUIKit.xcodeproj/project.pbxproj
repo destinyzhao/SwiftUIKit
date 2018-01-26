@@ -48,6 +48,12 @@
 		DE6CE9E4201B0EC000FF2196 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9E3201B0EC000FF2196 /* ProductModel.swift */; };
 		DE6CE9E7201B107A00FF2196 /* CollectionViewApplyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9E5201B107A00FF2196 /* CollectionViewApplyController.swift */; };
 		DE6CE9E8201B107A00FF2196 /* CollectionViewApplyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6CE9E6201B107A00FF2196 /* CollectionViewApplyController.xib */; };
+		DE6CE9EB201B1B6200FF2196 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9E9201B1B6200FF2196 /* CustomAlertViewController.swift */; };
+		DE6CE9EC201B1B6200FF2196 /* CustomAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6CE9EA201B1B6200FF2196 /* CustomAlertViewController.xib */; };
+		DE6CE9F3201B1D9100FF2196 /* PopupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9EF201B1D9100FF2196 /* PopupItem.swift */; };
+		DE6CE9F4201B1D9100FF2196 /* PopupAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9F0201B1D9100FF2196 /* PopupAlertView.swift */; };
+		DE6CE9F5201B1D9100FF2196 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9F1201B1D9100FF2196 /* PopupView.swift */; };
+		DE6CE9F6201B1D9100FF2196 /* PopupSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9F2201B1D9100FF2196 /* PopupSheetView.swift */; };
 		DE78B3AA200DAA2D00DB93C6 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3A8200DAA2D00DB93C6 /* RefreshViewController.swift */; };
 		DE78B3AB200DAA2D00DB93C6 /* RefreshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE78B3A9200DAA2D00DB93C6 /* RefreshViewController.xib */; };
 		DE78B3AE200DDA9100DB93C6 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3AD200DDA9100DB93C6 /* ContentModel.swift */; };
@@ -108,6 +114,12 @@
 		DE6CE9E3201B0EC000FF2196 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		DE6CE9E5201B107A00FF2196 /* CollectionViewApplyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewApplyController.swift; sourceTree = "<group>"; };
 		DE6CE9E6201B107A00FF2196 /* CollectionViewApplyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewApplyController.xib; sourceTree = "<group>"; };
+		DE6CE9E9201B1B6200FF2196 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		DE6CE9EA201B1B6200FF2196 /* CustomAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertViewController.xib; sourceTree = "<group>"; };
+		DE6CE9EF201B1D9100FF2196 /* PopupItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupItem.swift; sourceTree = "<group>"; };
+		DE6CE9F0201B1D9100FF2196 /* PopupAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupAlertView.swift; sourceTree = "<group>"; };
+		DE6CE9F1201B1D9100FF2196 /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		DE6CE9F2201B1D9100FF2196 /* PopupSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupSheetView.swift; sourceTree = "<group>"; };
 		DE78B3A8200DAA2D00DB93C6 /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
 		DE78B3A9200DAA2D00DB93C6 /* RefreshViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RefreshViewController.xib; sourceTree = "<group>"; };
 		DE78B3AD200DDA9100DB93C6 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
@@ -292,6 +304,8 @@
 				DE6CE9CB201AFE3400FF2196 /* CollectionViewController.xib */,
 				DE6CE9E5201B107A00FF2196 /* CollectionViewApplyController.swift */,
 				DE6CE9E6201B107A00FF2196 /* CollectionViewApplyController.xib */,
+				DE6CE9E9201B1B6200FF2196 /* CustomAlertViewController.swift */,
+				DE6CE9EA201B1B6200FF2196 /* CustomAlertViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -455,6 +469,7 @@
 		DE46282F200C569E000A3D12 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				DE6CE9ED201B1D9100FF2196 /* CommonModule */,
 				DE78B3BC200DFC4800DB93C6 /* Config */,
 				DE78B3B9200DFB4200DB93C6 /* NetworkService */,
 				DE462830200C569E000A3D12 /* SetupTabbar */,
@@ -536,6 +551,25 @@
 				DE6CE9E0201B0E2E00FF2196 /* CollectionApplyCell.xib */,
 			);
 			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		DE6CE9ED201B1D9100FF2196 /* CommonModule */ = {
+			isa = PBXGroup;
+			children = (
+				DE6CE9EE201B1D9100FF2196 /* PopupView */,
+			);
+			path = CommonModule;
+			sourceTree = "<group>";
+		};
+		DE6CE9EE201B1D9100FF2196 /* PopupView */ = {
+			isa = PBXGroup;
+			children = (
+				DE6CE9EF201B1D9100FF2196 /* PopupItem.swift */,
+				DE6CE9F0201B1D9100FF2196 /* PopupAlertView.swift */,
+				DE6CE9F1201B1D9100FF2196 /* PopupView.swift */,
+				DE6CE9F2201B1D9100FF2196 /* PopupSheetView.swift */,
+			);
+			path = PopupView;
 			sourceTree = "<group>";
 		};
 		DE78B3B9200DFB4200DB93C6 /* NetworkService */ = {
@@ -646,6 +680,7 @@
 				DE462846200C5CF4000A3D12 /* MeViewController.xib in Resources */,
 				DE78B3AB200DAA2D00DB93C6 /* RefreshViewController.xib in Resources */,
 				DE462836200C5C3C000A3D12 /* HomeViewController.xib in Resources */,
+				DE6CE9EC201B1B6200FF2196 /* CustomAlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +753,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6CE9F5201B1D9100FF2196 /* PopupView.swift in Sources */,
 				DE6CE9CC201AFE3400FF2196 /* CollectionViewController.swift in Sources */,
 				DE462845200C5CF4000A3D12 /* MeViewController.swift in Sources */,
 				DE6CE9D9201B050700FF2196 /* CollectionFooter.swift in Sources */,
@@ -731,19 +767,23 @@
 				DE4627EF200C4B48000A3D12 /* AppDelegate.swift in Sources */,
 				DE462841200C5CD7000A3D12 /* MessageViewController.swift in Sources */,
 				DE462835200C5C3C000A3D12 /* HomeViewController.swift in Sources */,
+				DE6CE9F3201B1D9100FF2196 /* PopupItem.swift in Sources */,
 				DE462861200C8937000A3D12 /* CustomCell.swift in Sources */,
 				DE46283D200C5CB9000A3D12 /* FindViewController.swift in Sources */,
 				DE462850200C7E65000A3D12 /* TabbarItemContentView.swift in Sources */,
 				DE46282D200C5229000A3D12 /* BaseNavigationController.swift in Sources */,
+				DE6CE9F6201B1D9100FF2196 /* PopupSheetView.swift in Sources */,
 				DE78B3BB200DFB6C00DB93C6 /* HomeNetworkService.swift in Sources */,
 				DE78B3AE200DDA9100DB93C6 /* ContentModel.swift in Sources */,
 				DE6CE9E7201B107A00FF2196 /* CollectionViewApplyController.swift in Sources */,
 				DE78B3B1200DF21900DB93C6 /* AlamofireViewController.swift in Sources */,
+				DE6CE9F4201B1D9100FF2196 /* PopupAlertView.swift in Sources */,
 				DE78B3B7200DF81300DB93C6 /* AlamofireCell.swift in Sources */,
 				DE462820200C4F69000A3D12 /* BaseViewController.swift in Sources */,
 				DE6CE9E1201B0E2E00FF2196 /* CollectionApplyCell.swift in Sources */,
 				DE462832200C56AB000A3D12 /* SetupTabbar.swift in Sources */,
 				DE462858200C7F62000A3D12 /* LoginViewController.swift in Sources */,
+				DE6CE9EB201B1B6200FF2196 /* CustomAlertViewController.swift in Sources */,
 				DE462849200C5E45000A3D12 /* HomePushViewController.swift in Sources */,
 				DE78B3B4200DF7FC00DB93C6 /* AlamofireModel.swift in Sources */,
 				DE6CE9D5201B04F800FF2196 /* CollectionHeader.swift in Sources */,

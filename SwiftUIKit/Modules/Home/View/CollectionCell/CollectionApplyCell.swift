@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol CollectionApplyCellDelegate:NSObjectProtocol {
+    func collectionViewCellDidClickedLikeButton(button: UIButton)
+}
+
 class CollectionApplyCell: UICollectionViewCell {
 
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var titlelbl: UILabel!
     @IBOutlet weak var pricelbl: UILabel!
     @IBOutlet weak var likeButton: UIButton!
+    
+    weak var delegate: CollectionApplyCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,5 +37,12 @@ class CollectionApplyCell: UICollectionViewCell {
             pricelbl.text = "￥" + String(self.product!.price!)
         }
     }
-
+    
+   
+    @IBAction func likeButtonClick(_ sender: UIButton) {
+        delegate?.collectionViewCellDidClickedLikeButton(button: sender)
+    }
+    
+    
+    
 }

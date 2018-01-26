@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertViewController" customModule="SwiftUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDE-L6-opE">
+                    <rect key="frame" x="20" y="120" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="M2r-FE-eWO"/>
+                    </constraints>
+                    <state key="normal" title="Alert"/>
+                    <connections>
+                        <action selector="alertBtnClicked:" destination="-1" eventType="touchUpInside" id="zIl-A2-zk7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7z-VR-OVw">
+                    <rect key="frame" x="20" y="180" width="335" height="30"/>
+                    <state key="normal" title="ActionSheet"/>
+                    <connections>
+                        <action selector="actionSheetBtnClicked:" destination="-1" eventType="touchUpInside" id="GB6-TX-ChH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pDE-L6-opE" secondAttribute="trailing" constant="20" id="ABZ-wT-Rmk"/>
+                <constraint firstItem="c7z-VR-OVw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="NPy-SJ-rnh"/>
+                <constraint firstItem="pDE-L6-opE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="X6Y-Nw-9nD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c7z-VR-OVw" secondAttribute="trailing" constant="20" id="YiH-yQ-yCS"/>
+                <constraint firstItem="pDE-L6-opE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="h5f-ax-365"/>
+                <constraint firstItem="c7z-VR-OVw" firstAttribute="top" secondItem="pDE-L6-opE" secondAttribute="bottom" constant="20" id="pAj-Vh-Pw5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

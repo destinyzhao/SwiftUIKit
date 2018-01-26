@@ -33,15 +33,13 @@ class CollectionViewApplyController: BaseViewController {
         let layout = UICollectionViewFlowLayout.init()
         let width:CGFloat = (UIScreen.main.bounds.width - 20)/2.0
         let height:CGFloat = 245.0;
-//        layout.minimumLineSpacing = 5.0
-//        layout.minimumInteritemSpacing = 5.0
         layout.sectionInset = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
         // cell Size
         layout.itemSize = CGSize.init(width: width, height: height)
         
         self.collectionView.collectionViewLayout = layout
         
-        // cell
+        // 注册cell
         self.collectionView .register(UINib.init(nibName: collectionCellIdentifier, bundle: nil), forCellWithReuseIdentifier: collectionCellIdentifier)
     }
     
@@ -65,7 +63,7 @@ class CollectionViewApplyController: BaseViewController {
 
 }
 
-extension CollectionViewApplyController:UICollectionViewDelegate,UICollectionViewDataSource{
+extension CollectionViewApplyController:UICollectionViewDelegate,UICollectionViewDataSource,CollectionApplyCellDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return products.count
     }
@@ -73,7 +71,12 @@ extension CollectionViewApplyController:UICollectionViewDelegate,UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellIdentifier, for: indexPath) as! CollectionApplyCell
         cell.product = products[indexPath.item]
-        //cell.delegate = self
+        cell.delegate = self
         return cell
+    }
+    
+    // Delegate
+    func collectionViewCellDidClickedLikeButton(button: UIButton) {
+        print("委托")
     }
 }

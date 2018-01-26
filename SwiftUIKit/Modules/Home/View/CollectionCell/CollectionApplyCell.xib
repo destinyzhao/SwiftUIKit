@@ -47,7 +47,7 @@
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                         <connections>
-                            <action selector="likeButtonClickWithSender:" destination="coE-dt-lok" eventType="touchUpInside" id="qWR-Nc-AJf"/>
+                            <action selector="likeButtonClick:" destination="coE-dt-lok" eventType="touchUpInside" id="6HH-NT-fUE"/>
                         </connections>
                     </button>
                 </subviews>

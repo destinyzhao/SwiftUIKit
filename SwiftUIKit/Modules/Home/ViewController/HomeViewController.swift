@@ -12,7 +12,7 @@ class HomeViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let dataArray = ["PhshViewController","PresentViewController","自定义Cell","下拉刷新","Kingfisher","Alamofire","CollectionViewDemo","Collection运用"]
+    let dataArray = ["PhshViewController","PresentViewController","自定义Cell","下拉刷新","Kingfisher","Alamofire","CollectionViewDemo","Collection运用","Alert"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,6 +100,12 @@ extension HomeViewController:UITableViewDataSource,UITableViewDelegate{
             let collectionVC = CollectionViewApplyController()
             collectionVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(collectionVC, animated: true)
+            break
+            
+        case 8:
+            let alertVC = CustomAlertViewController()
+            alertVC.hidesBottomBarWhenPushed =  true
+            self.navigationController?.pushViewController(alertVC, animated: true)
             break
             
         default: break
