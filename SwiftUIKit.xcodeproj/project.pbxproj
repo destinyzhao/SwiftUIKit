@@ -43,6 +43,11 @@
 		DE6CE9D6201B04F800FF2196 /* CollectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6CE9D4201B04F800FF2196 /* CollectionHeader.xib */; };
 		DE6CE9D9201B050700FF2196 /* CollectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9D7201B050700FF2196 /* CollectionFooter.swift */; };
 		DE6CE9DA201B050700FF2196 /* CollectionFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6CE9D8201B050700FF2196 /* CollectionFooter.xib */; };
+		DE6CE9E1201B0E2E00FF2196 /* CollectionApplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9DF201B0E2E00FF2196 /* CollectionApplyCell.swift */; };
+		DE6CE9E2201B0E2E00FF2196 /* CollectionApplyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6CE9E0201B0E2E00FF2196 /* CollectionApplyCell.xib */; };
+		DE6CE9E4201B0EC000FF2196 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9E3201B0EC000FF2196 /* ProductModel.swift */; };
+		DE6CE9E7201B107A00FF2196 /* CollectionViewApplyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6CE9E5201B107A00FF2196 /* CollectionViewApplyController.swift */; };
+		DE6CE9E8201B107A00FF2196 /* CollectionViewApplyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6CE9E6201B107A00FF2196 /* CollectionViewApplyController.xib */; };
 		DE78B3AA200DAA2D00DB93C6 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3A8200DAA2D00DB93C6 /* RefreshViewController.swift */; };
 		DE78B3AB200DAA2D00DB93C6 /* RefreshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE78B3A9200DAA2D00DB93C6 /* RefreshViewController.xib */; };
 		DE78B3AE200DDA9100DB93C6 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3AD200DDA9100DB93C6 /* ContentModel.swift */; };
@@ -98,6 +103,11 @@
 		DE6CE9D4201B04F800FF2196 /* CollectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeader.xib; sourceTree = "<group>"; };
 		DE6CE9D7201B050700FF2196 /* CollectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooter.swift; sourceTree = "<group>"; };
 		DE6CE9D8201B050700FF2196 /* CollectionFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionFooter.xib; sourceTree = "<group>"; };
+		DE6CE9DF201B0E2E00FF2196 /* CollectionApplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionApplyCell.swift; sourceTree = "<group>"; };
+		DE6CE9E0201B0E2E00FF2196 /* CollectionApplyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionApplyCell.xib; sourceTree = "<group>"; };
+		DE6CE9E3201B0EC000FF2196 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		DE6CE9E5201B107A00FF2196 /* CollectionViewApplyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewApplyController.swift; sourceTree = "<group>"; };
+		DE6CE9E6201B107A00FF2196 /* CollectionViewApplyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewApplyController.xib; sourceTree = "<group>"; };
 		DE78B3A8200DAA2D00DB93C6 /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
 		DE78B3A9200DAA2D00DB93C6 /* RefreshViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RefreshViewController.xib; sourceTree = "<group>"; };
 		DE78B3AD200DDA9100DB93C6 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
@@ -251,6 +261,7 @@
 			children = (
 				DE78B3AD200DDA9100DB93C6 /* ContentModel.swift */,
 				DE78B3B3200DF7FC00DB93C6 /* AlamofireModel.swift */,
+				DE6CE9E3201B0EC000FF2196 /* ProductModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,6 +290,8 @@
 				DE78B3B0200DF21900DB93C6 /* AlamofireViewController.xib */,
 				DE6CE9CA201AFE3400FF2196 /* CollectionViewController.swift */,
 				DE6CE9CB201AFE3400FF2196 /* CollectionViewController.xib */,
+				DE6CE9E5201B107A00FF2196 /* CollectionViewApplyController.swift */,
+				DE6CE9E6201B107A00FF2196 /* CollectionViewApplyController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -519,6 +532,8 @@
 				DE6CE9D4201B04F800FF2196 /* CollectionHeader.xib */,
 				DE6CE9D7201B050700FF2196 /* CollectionFooter.swift */,
 				DE6CE9D8201B050700FF2196 /* CollectionFooter.xib */,
+				DE6CE9DF201B0E2E00FF2196 /* CollectionApplyCell.swift */,
+				DE6CE9E0201B0E2E00FF2196 /* CollectionApplyCell.xib */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -611,6 +626,7 @@
 			files = (
 				DE462862200C8937000A3D12 /* CustomCell.xib in Resources */,
 				DE46284A200C5E45000A3D12 /* HomePushViewController.xib in Resources */,
+				DE6CE9E2201B0E2E00FF2196 /* CollectionApplyCell.xib in Resources */,
 				DE78B3B8200DF81300DB93C6 /* AlamofireCell.xib in Resources */,
 				DE4627F9200C4B48000A3D12 /* LaunchScreen.storyboard in Resources */,
 				DE462859200C7F62000A3D12 /* LoginViewController.xib in Resources */,
@@ -621,6 +637,7 @@
 				DE6CE9D6201B04F800FF2196 /* CollectionHeader.xib in Resources */,
 				DE462842200C5CD7000A3D12 /* MessageViewController.xib in Resources */,
 				DE78B3B2200DF21900DB93C6 /* AlamofireViewController.xib in Resources */,
+				DE6CE9E8201B107A00FF2196 /* CollectionViewApplyController.xib in Resources */,
 				DE6CE9DA201B050700FF2196 /* CollectionFooter.xib in Resources */,
 				DE46284C200C6E30000A3D12 /* Navi.xcassets in Resources */,
 				DE46285D200C88B7000A3D12 /* CustomCellViewController.xib in Resources */,
@@ -707,6 +724,7 @@
 				DE6CE9D1201AFF4100FF2196 /* CollectionViewCell.swift in Sources */,
 				DE46285C200C88B7000A3D12 /* CustomCellViewController.swift in Sources */,
 				DE78B3C0200DFC8800DB93C6 /* NetworkServiceConfig.swift in Sources */,
+				DE6CE9E4201B0EC000FF2196 /* ProductModel.swift in Sources */,
 				DE4627F1200C4B48000A3D12 /* ViewController.swift in Sources */,
 				DE462839200C5C9C000A3D12 /* FavorViewController.swift in Sources */,
 				DE78B3AA200DAA2D00DB93C6 /* RefreshViewController.swift in Sources */,
@@ -719,9 +737,11 @@
 				DE46282D200C5229000A3D12 /* BaseNavigationController.swift in Sources */,
 				DE78B3BB200DFB6C00DB93C6 /* HomeNetworkService.swift in Sources */,
 				DE78B3AE200DDA9100DB93C6 /* ContentModel.swift in Sources */,
+				DE6CE9E7201B107A00FF2196 /* CollectionViewApplyController.swift in Sources */,
 				DE78B3B1200DF21900DB93C6 /* AlamofireViewController.swift in Sources */,
 				DE78B3B7200DF81300DB93C6 /* AlamofireCell.swift in Sources */,
 				DE462820200C4F69000A3D12 /* BaseViewController.swift in Sources */,
+				DE6CE9E1201B0E2E00FF2196 /* CollectionApplyCell.swift in Sources */,
 				DE462832200C56AB000A3D12 /* SetupTabbar.swift in Sources */,
 				DE462858200C7F62000A3D12 /* LoginViewController.swift in Sources */,
 				DE462849200C5E45000A3D12 /* HomePushViewController.swift in Sources */,

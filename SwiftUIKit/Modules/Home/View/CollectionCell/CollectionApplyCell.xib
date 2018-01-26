@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="coE-dt-lok" customClass="CollectionApplyCell" customModule="SwiftUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="139" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="139" height="245"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tbg-L7-aDW">
+                        <rect key="frame" x="0.0" y="0.0" width="139" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="164" id="oZF-ZQ-RiN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeH-9Z-sWT">
+                        <rect key="frame" x="5" y="176" width="134" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjb-75-wS5">
+                        <rect key="frame" x="5" y="215" width="38" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.90980392160000001" green="0.3294117647" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBp-QN-gUO">
+                        <rect key="frame" x="108" y="215" width="26" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="S05-FV-eg2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="0" image="Search_GiftBtn_Default_12x10_">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="likeButtonClickWithSender:" destination="coE-dt-lok" eventType="touchUpInside" id="qWR-Nc-AJf"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IeH-9Z-sWT" firstAttribute="top" secondItem="tbg-L7-aDW" secondAttribute="bottom" constant="12" id="N9C-k3-4ky"/>
+                <constraint firstItem="tbg-L7-aDW" firstAttribute="top" secondItem="coE-dt-lok" secondAttribute="top" id="OTd-Mc-9Lr"/>
+                <constraint firstItem="JBp-QN-gUO" firstAttribute="height" secondItem="Kjb-75-wS5" secondAttribute="height" id="WQm-WB-5oy"/>
+                <constraint firstItem="IeH-9Z-sWT" firstAttribute="leading" secondItem="coE-dt-lok" secondAttribute="leading" constant="5" id="bwi-M5-cAC"/>
+                <constraint firstAttribute="trailing" secondItem="tbg-L7-aDW" secondAttribute="trailing" id="ffW-lA-3IT"/>
+                <constraint firstAttribute="trailing" secondItem="IeH-9Z-sWT" secondAttribute="trailing" id="gPj-a6-B3b"/>
+                <constraint firstAttribute="trailing" secondItem="JBp-QN-gUO" secondAttribute="trailing" constant="5" id="l4i-6T-Hjh"/>
+                <constraint firstItem="Kjb-75-wS5" firstAttribute="leading" secondItem="IeH-9Z-sWT" secondAttribute="leading" id="nFW-sC-4nv"/>
+                <constraint firstItem="JBp-QN-gUO" firstAttribute="centerY" secondItem="Kjb-75-wS5" secondAttribute="centerY" id="ppG-5T-WMd"/>
+                <constraint firstItem="tbg-L7-aDW" firstAttribute="leading" secondItem="coE-dt-lok" secondAttribute="leading" id="tZz-2I-c4e"/>
+                <constraint firstAttribute="bottom" secondItem="Kjb-75-wS5" secondAttribute="bottom" constant="5" id="zhJ-D8-cee"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="xv6-ZI-bfa"/>
+            <size key="customSize" width="139" height="193"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="likeButton" destination="JBp-QN-gUO" id="uB4-AK-HXv"/>
+                <outlet property="pricelbl" destination="Kjb-75-wS5" id="UsC-X4-Pff"/>
+                <outlet property="productImageView" destination="tbg-L7-aDW" id="C5x-4I-AEc"/>
+                <outlet property="titlelbl" destination="IeH-9Z-sWT" id="NA9-fV-rV2"/>
+            </connections>
+            <point key="canvasLocation" x="294.5" y="478.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Search_GiftBtn_Default_12x10_" width="16" height="16"/>
+    </resources>
+</document>
