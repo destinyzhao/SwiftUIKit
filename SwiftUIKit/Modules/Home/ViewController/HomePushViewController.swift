@@ -8,7 +8,13 @@
 
 import UIKit
 
+/// 申明闭包
+typealias callBack = ()->()
+
 class HomePushViewController: BaseViewController {
+    
+    var callBackWithParam:((String, String) -> (Void))?
+    var callBack:callBack?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +28,19 @@ class HomePushViewController: BaseViewController {
     }
     
 
+    @IBAction func callBackWithParam(_ sender: UIButton) {
+        if (callBackWithParam != nil){
+            self.callBackWithParam!("Value","Value1")
+        }
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func callBack(_ sender: UIButton) {
+        if (callBack != nil) {
+            self.callBack!()
+        }
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

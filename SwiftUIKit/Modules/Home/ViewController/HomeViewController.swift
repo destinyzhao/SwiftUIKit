@@ -12,7 +12,7 @@ class HomeViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let dataArray = ["PhshViewController","PresentViewController","自定义Cell","下拉刷新","Kingfisher","Alamofire","CollectionViewDemo","Collection运用","Alert"]
+    let dataArray = ["PhshViewController","PresentViewController","自定义Cell","下拉刷新","Kingfisher","Alamofire","CollectionViewDemo","Collection运用","Alert","闭包使用"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,6 +106,18 @@ extension HomeViewController:UITableViewDataSource,UITableViewDelegate{
             let alertVC = CustomAlertViewController()
             alertVC.hidesBottomBarWhenPushed =  true
             self.navigationController?.pushViewController(alertVC, animated: true)
+            break
+            
+        case 9:
+            let pushVC = HomePushViewController()
+            pushVC.hidesBottomBarWhenPushed = true
+            pushVC.callBackWithParam = {(value,value1)->Void in
+                print("结果为:\(value),\(value1)")
+            }
+            pushVC.callBack = {()->Void in
+                 print("回调成功")
+            }
+            self.navigationController?.pushViewController(pushVC, animated: true)
             break
             
         default: break
