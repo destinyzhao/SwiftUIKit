@@ -12,7 +12,7 @@ class HomeViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let dataArray = ["PhshViewController","PresentViewController","自定义Cell","下拉刷新","Kingfisher","Alamofire","CollectionViewDemo","Collection运用","Alert","闭包使用"]
+    let dataArray = ["PhshViewController","PresentViewController","自定义Cell","下拉刷新","Kingfisher","Alamofire","CollectionViewDemo","Collection运用","Alert","闭包使用","SnapKit"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,6 +118,12 @@ extension HomeViewController:UITableViewDataSource,UITableViewDelegate{
                  print("回调成功")
             }
             self.navigationController?.pushViewController(pushVC, animated: true)
+            break
+            
+        case 10:
+            let snapKitVC = SnapKitViewController()
+            snapKitVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(snapKitVC, animated: true)
             break
             
         default: break

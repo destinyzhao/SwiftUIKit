@@ -64,6 +64,8 @@
 		DE78B3B8200DF81300DB93C6 /* AlamofireCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE78B3B6200DF81300DB93C6 /* AlamofireCell.xib */; };
 		DE78B3BB200DFB6C00DB93C6 /* HomeNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3BA200DFB6C00DB93C6 /* HomeNetworkService.swift */; };
 		DE78B3C0200DFC8800DB93C6 /* NetworkServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78B3BF200DFC8800DB93C6 /* NetworkServiceConfig.swift */; };
+		DEA6CB5B201F13960009E086 /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA6CB59201F13960009E086 /* SnapKitViewController.swift */; };
+		DEA6CB5C201F13960009E086 /* SnapKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA6CB5A201F13960009E086 /* SnapKitViewController.xib */; };
 		F6AE0BCF00E748752A3DE31C /* Pods_SwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1302ABECA68457438801A59C /* Pods_SwiftUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +132,8 @@
 		DE78B3B6200DF81300DB93C6 /* AlamofireCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireCell.xib; sourceTree = "<group>"; };
 		DE78B3BA200DFB6C00DB93C6 /* HomeNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkService.swift; sourceTree = "<group>"; };
 		DE78B3BF200DFC8800DB93C6 /* NetworkServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceConfig.swift; sourceTree = "<group>"; };
+		DEA6CB59201F13960009E086 /* SnapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
+		DEA6CB5A201F13960009E086 /* SnapKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnapKitViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +310,8 @@
 				DE6CE9E6201B107A00FF2196 /* CollectionViewApplyController.xib */,
 				DE6CE9E9201B1B6200FF2196 /* CustomAlertViewController.swift */,
 				DE6CE9EA201B1B6200FF2196 /* CustomAlertViewController.xib */,
+				DEA6CB59201F13960009E086 /* SnapKitViewController.swift */,
+				DEA6CB5A201F13960009E086 /* SnapKitViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -669,6 +675,7 @@
 				DE6CE9CD201AFE3400FF2196 /* CollectionViewController.xib in Resources */,
 				DE6CE9D2201AFF4100FF2196 /* CollectionViewCell.xib in Resources */,
 				DE6CE9D6201B04F800FF2196 /* CollectionHeader.xib in Resources */,
+				DEA6CB5C201F13960009E086 /* SnapKitViewController.xib in Resources */,
 				DE462842200C5CD7000A3D12 /* MessageViewController.xib in Resources */,
 				DE78B3B2200DF21900DB93C6 /* AlamofireViewController.xib in Resources */,
 				DE6CE9E8201B107A00FF2196 /* CollectionViewApplyController.xib in Resources */,
@@ -731,6 +738,7 @@
 				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -739,6 +747,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,6 +764,7 @@
 			files = (
 				DE6CE9F5201B1D9100FF2196 /* PopupView.swift in Sources */,
 				DE6CE9CC201AFE3400FF2196 /* CollectionViewController.swift in Sources */,
+				DEA6CB5B201F13960009E086 /* SnapKitViewController.swift in Sources */,
 				DE462845200C5CF4000A3D12 /* MeViewController.swift in Sources */,
 				DE6CE9D9201B050700FF2196 /* CollectionFooter.swift in Sources */,
 				DE6CE9D1201AFF4100FF2196 /* CollectionViewCell.swift in Sources */,
